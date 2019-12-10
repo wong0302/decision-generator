@@ -1,5 +1,6 @@
 {
   "main": "node_modules/expo/AppEntry.js",
+  "homepage": "https://wong0302.github.io/decion-generator/",
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
