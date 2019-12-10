@@ -60,6 +60,7 @@ class App extends Component {
 
     return (
         <View style={styles.container}>
+        <Text style={styles.jay}>Jay's Decision Maker</Text>
             { this.state.title ?
             <Text style={styles.header}>Ask me a question and tap the button below.</Text> : null
             }
@@ -86,6 +87,7 @@ class App extends Component {
 
 const styles = StyleSheet.create({
     container: {
+      backgroundColor: '#e3f2fd',
     flex:1,
     justifyContent:"center",
     alignItems:"center"
@@ -93,11 +95,11 @@ const styles = StyleSheet.create({
     header: {
     textAlign: 'center',
     fontSize: 32,
-    padding: 30,
+    padding: 20,
     },
     answer: {
     textAlign: 'center',
-    color: 'white',
+    color: '#e3f2fd',
     backgroundColor: 'rgba(0,0,0,0)',
     fontSize: 32,
     textTransform: 'uppercase'
@@ -105,7 +107,8 @@ const styles = StyleSheet.create({
     button: {
     width: 260,
     alignItems: 'center',
-    backgroundColor: '#2196F3'
+    backgroundColor: '#304ffe', 
+    borderRadius: 9
     },
     buttonText: {
     padding: 20,
@@ -118,6 +121,14 @@ const styles = StyleSheet.create({
     height: imageHeight,
     width: imageWidth,
     marginBottom: 30,
+    },
+    jay: {
+      padding: 20,
+      color: '#0026ca',
+      fontSize: 40,
+      textTransform: 'uppercase',
+      textAlign: 'center',
+      fontWeight: '200'
     }
 });
 
